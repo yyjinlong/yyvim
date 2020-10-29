@@ -59,7 +59,7 @@ vim ~/.vimrc
 
 ### 效果
 
-![](https://raw.githubusercontent.com/yyjinlong/yyvim/master/yyvim.png)
+![yyvim](https://github.com/yyjinlong/yyvim/blob/master/yyvim.png)
 
 ### 插件说明
 
