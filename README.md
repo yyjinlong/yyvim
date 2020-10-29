@@ -66,9 +66,9 @@ vim ~/.vimrc
 | 插件                              | 说明                  |
 | :---                              | ----                  |
 | [dracula / **vim主题**][color]    | dracule 主题配色      |
-| [LeaderF / **快速搜索**][color]   | 文件快速搜索          |
-| [tagbar / **快速导航**][color]    | 大纲式快速导航        |
-| [ack / **全局搜索**][color]       | 全局搜索              |
+| [LeaderF / **快速搜索**][plugin1] | 文件快速搜索          |
+| [tagbar / **快速导航**][plugin2]  | 大纲式快速导航        |
+| [ack / **全局搜索**][plugin3]     | 全局搜索              |
 
 
 ### 快捷键映射
