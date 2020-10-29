@@ -38,7 +38,6 @@ set noswapfile                                  " 不生成.swap文件
 set nowrap                                      " 禁止折行
 set guifont=Courier_New:h16
 set guifontwide=STXihei:h16
-set hidden
 "set cursorcolumn                               " 高亮当前列
 "set cursorline                                 " 高亮当前行
 
