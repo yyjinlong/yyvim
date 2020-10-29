@@ -65,10 +65,10 @@ vim ~/.vimrc
 
 | 插件                              | 说明                  |
 | :---                              | ----                  |
-| [dracula / **vim主题**][color]    | dracule 主题配色      |
-| [LeaderF / **快速搜索**][plugin1] | 文件快速搜索          |
-| [tagbar / **快速导航**][plugin2]  | 大纲式快速导航        |
-| [ack / **全局搜索**][plugin3]     | 全局搜索              |
+| [dracula / **vim主题**]           | dracule 主题配色      |
+| [LeaderF / **快速搜索**]          | 文件快速搜索          |
+| [tagbar / **快速导航**]           | 大纲式快速导航        |
+| [ack / **全局搜索**]              | 全局搜索              |
 
 
 ### 快捷键映射
