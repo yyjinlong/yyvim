@@ -201,6 +201,12 @@ Plugin 'hdima/python-syntax'
 " 插件: python pep8
 Plugin 'hynek/vim-python-pep8-indent'
 
+" 插件: godef
+Plugin 'dgryski/vim-godef'
+
+let g:godef_split=3                    "vim-godef跳转方式：左右打开新窗口
+let g:godef_same_file_in_same_window=1 "函数在同一个文件中时不需要打开新窗口
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

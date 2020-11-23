@@ -50,11 +50,21 @@ vim ~/.vimrc
 go env -w GO111MODULE=on
 go env -w GOPROXY="https://goproxy.io,direct"
 
+# step1: 安装gotags
 go get -u github.com/jstemmer/gotags
 
 vim ~/.vimrc
 输入:GoInstallBinaries
 注: 安装需要几分钟, 需等待相关插件安装完成.
+
+注: step2: 安装godef
+go get -v github.com/rogpeppe/godef
+
+vim ~/.vim/bundle/vim-godef/plugin/godef.vim
+添加:
+autocmd FileType go nnoremap <buffer> <C-]> :call GodefUnderCursor()<cr>
+
+注: 确保GOBIN放入到了GOPATH目录下。export PATH=$GOBIN:$PATH
 ```
 
 ### 效果
@@ -70,6 +80,7 @@ vim ~/.vimrc
 | [tagbar / **快速导航**]           | 大纲式快速导航                    |
 | [ack / **全局搜索**]              | 全局搜索                          |
 | [nerdcommenter/ **快速注释**]     | 快速注释                          |
+| [vim-godef/ **代码跳转**]         | golang代码跳转                    |
 
 
 ### 快捷键映射
@@ -84,4 +95,4 @@ vim ~/.vimrc
 | `,b`                              | 快速搜索文件(python, js)          |
 | `,cc`                             | 快速注释代码                      |
 | `,cu`                             | 快速解开代码                      |
-
+| `<Ctrl> ]`                        | 跳转到对应go的代码                |
