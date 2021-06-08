@@ -107,6 +107,7 @@ autocmd FileType python nnoremap <leader>= :0,$!yapf<CR>
 let g:ale_linters = {'javascript': ['eslint'], 'python': ['flake8']}
 let g:ale_fixers = ['yapf']
 let g:ale_completion_enabled = 0
+let b:ale_python_flake8_options = '--max-line-length=100'
 
 " 插件: 快速注释
 Plugin 'scrooloose/nerdcommenter'   
