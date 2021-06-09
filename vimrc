@@ -105,9 +105,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'w0rp/ale'
 autocmd FileType python nnoremap <leader>= :0,$!yapf<CR>
 let g:ale_linters = {'javascript': ['eslint'], 'python': ['flake8']}
-let b:ale_python_flake8_options = '--max-line-length=100 --ignore=E265,E266'
 let g:ale_fixers = ['yapf']
 let g:ale_completion_enabled = 0
+
+" python flake8语法检查设置
+let b:ale_python_flake8_options = '--max-line-length=100 --ignore=E265,E266'
 
 " 插件: 快速注释
 Plugin 'scrooloose/nerdcommenter'   
