@@ -38,6 +38,8 @@ set noswapfile                                  " 不生成.swap文件
 set nowrap                                      " 禁止折行
 set guifont=Courier_New:h16
 set guifontwide=STXihei:h16
+set backspace=2                                 " 可以连续删除多行
+
 "set cursorcolumn                               " 高亮当前列
 "set cursorline                                 " 高亮当前行
 
@@ -81,7 +83,6 @@ autocmd FileType python nnoremap <leader>ipdb :-1read $HOME/.vim/.snippets/ipdb.
 " let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-
 " 插件: vim基础配置，例如关键字配色和缩进等等
 Plugin 'tpope/vim-sensible'
 
@@ -109,7 +110,7 @@ let g:ale_fixers = ['yapf']
 let g:ale_completion_enabled = 0
 
 " python flake8语法检查设置
-let b:ale_python_flake8_options = '--max-line-length=100 --ignore=E265,E266'
+let b:ale_python_flake8_options = '--max-line-length=100 --ignore=E126,E127,E265,E266'
 
 " 插件: 快速注释
 Plugin 'scrooloose/nerdcommenter'   
@@ -145,10 +146,34 @@ Plugin 'mxw/vim-jsx'
 Plugin 'mattn/emmet-vim'
 Plugin 'sillybun/vim-repl'
 
+
 " 插件: dracula 主题配色
 Plugin 'dracula/vim'
+"set background=dark
+"colorscheme dracula                              " 设置当前主题为dracula
+
+" 插件: molokai 主题配色
+Plugin 'tomasr/molokai'
+"colorscheme molokai                              " 设置当前主题为molokai
+"let g:molokai_original = 1                       " 匹配原始molokai原始背景色
+"let g:rehash256 = 1
+
+" 插件: vim-one 主题配色
+Plugin 'rakr/vim-one'
+"colorscheme one                                  " 设置当前主题为one
+"set background=dark
+"set termguicolors
+
+" 插件: everforest 主题配色
+"Plugin 'sainnhe/everforest'
+"colorscheme everforest                           " 设置当前主题为everforest
+"set background=dark
+
+" 插件: gruvbox 主题配色
+Plugin 'morhetz/gruvbox'
+colorscheme gruvbox                              " 设置当前主题为gruvbox
 set background=dark
-colorscheme dracula                              " 设置当前主题为dracula
+
 
 " 插件: golang
 Plugin 'fatih/vim-go'
@@ -185,6 +210,16 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+let g:go_version_warning = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_generate_tags = 1
+let g:go_addtags_skip_unexported = 0
 
 " 插件: 自动关闭 HTML 标签
 Plugin 'docunext/closetag.vim'
