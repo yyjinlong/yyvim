@@ -175,6 +175,11 @@ colorscheme gruvbox                              " 设置当前主题为gruvbox
 set background=dark
 
 
+" 插件: git 侧边栏插件
+Plugin 'airblade/vim-gitgutter'
+let g:gitgutter_eager = 0
+let g:gitgutter_realtime = 0
+
 " 插件: golang
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
