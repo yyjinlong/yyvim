@@ -81,7 +81,7 @@ autocmd FileType go nnoremap <buffer> <C-]> :call GodefUnderCursor()<cr>
 | [ack / **全局搜索**]              | 全局搜索                          |
 | [nerdcommenter/ **快速注释**]     | 快速注释                          |
 | [vim-godef/ **代码跳转**]         | golang代码跳转                    |
-| [vim-gitgutter/ **git检查**]      | golang代码跳转                    |
+| [vim-gitgutter/ **git检查**]      | git代码侧边栏检查                 |
 
 
 ### 快捷键映射
