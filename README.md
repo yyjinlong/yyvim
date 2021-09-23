@@ -41,7 +41,10 @@ ln -s ~/.yyvim/vimrc ~/.vimrc
 ### step5 安装插件
 ```bash
 vim ~/.vimrc
-输入:PlugInstall
+输入:BundleInstall
+
+如果新增插件
+输入:PluginInstall
 ```
 
 ### step6 golang处理(如果不需要go, 可忽略)
