@@ -47,7 +47,21 @@ vim ~/.vimrc
 输入:PluginInstall
 ```
 
-### step6 golang处理(如果不需要go, 可忽略)
+### step6 vim-8 安装gruvbox主题
+```bash
+
+// vim8版本解决:
+git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/default/start/gruvbox
+
+// 如果不好使，则使用如下主题(适用于vim-8的gruvbox主题)
+Plugin 'habamax/vim-gruvbit'
+set termguicolors
+colorscheme gruvbit
+
+地址: https://github.com/habamax/vim-gruvbit
+```
+
+### step7 golang处理(如果不需要go, 可忽略)
 ```bash
 // 注: 要求go 大于1.11版本
 go env -w GO111MODULE=on
