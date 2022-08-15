@@ -69,6 +69,8 @@ go env -w GOPROXY="https://goproxy.io,direct"
 
 # step1: 安装gotags
 go get -u github.com/jstemmer/gotags
+或者:
+go install github.com/jstemmer/gotags@v1.4.1
 
 vim ~/.vimrc
 输入:GoInstallBinaries
@@ -76,6 +78,8 @@ vim ~/.vimrc
 
 注: step2: 安装godef
 go get -v github.com/rogpeppe/godef
+或者:
+go install github.com/rogpeppe/godef@latest
 
 vim ~/.vim/bundle/vim-godef/plugin/godef.vim
 添加:
